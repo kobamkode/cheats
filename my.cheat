@@ -1,7 +1,10 @@
 % flatpak
 
-# Move flatpak to bin
-sudo ln -s /var/lib/flatpak/exports/bin/md.obsidian.Obsidian /usr/bin/obsidian
+# Symlink recent flatpak into bin
+sudo ln -s /var/lib/flatpak/exports/bin/<app_id> /usr/bin/<app_name>
+
+$ app_id: flatpak history --columns=application --reverse | sed -n '1p'
+$ app_name: flatpak history --columns=application --reverse | sed -n '1p' | cut -d '.' -f 1
 
 % devcontainer
 
