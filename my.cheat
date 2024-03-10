@@ -2,3 +2,8 @@
 
 # Move flatpak to bin
 sudo ln -s /var/lib/flatpak/exports/bin/md.obsidian.Obsidian /usr/bin/obsidian
+
+% devcontainer
+
+# Build container in current dir :: dcu
+devcontainer up --remove-existing-container true --workspace-folder .
