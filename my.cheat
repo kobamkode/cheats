@@ -24,8 +24,13 @@ navi repo add kobamkode/cheats
 
 % quartz
 
-# Start local server
+# Start quartz local server :: qb
 npx quartz build --serve
 
-# Sync content
+# Sync quartz content :: qs
 npx quartz sync
+
+% go
+
+# Create Go project :: goblue
+go-blueprint create --advanced
